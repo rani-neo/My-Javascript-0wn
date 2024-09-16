@@ -1,48 +1,97 @@
 'use scrict';
 /*
 function describeCountry(country, population, capitalCity) {
- return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+ // Return a string in the required format
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 }
-const descPortugal = describeCountry('Portugal', 10, 'Lisbon');
-const descGermany = describeCountry('Germany', 83, 'Berlin');
-const descFinland = describeCountry('Finland', 6, 'Helsinki');
+// Call the function 3 times with different countries
+const country1 = describeCountry('Finland', 6, 'Helsinki');
 
-console.log(descPortugal,descGermany,descFinland);
+const country2 = describeCountry('Japan', '126', 'Tokyo');
+const country3 = describeCountry('Canada', 38, 'Ottawa');
+console.log(country1, country2, country3);
 
-
-
+// Function declaration
 function percentageOfWorld1(population) {
-    return (population / 7900) * 100;
-}
-const percentageOfWorld2 = function (population) {
   return (population / 7900) * 100;
-};
-const percPortugal1 = percentageOfWorld1(10);
-const percChina1 = percentageOfWorld1(1441);
-const percUSA1 = percentageOfWorld1(332);
+}
+// Call percentageOfWorld1 with three different populations
+const chinaPercentage1 = percentageOfWorld1(1441);
+const indiaPercentage = percentageOfWorld1(1390);
+const usaPercentage = percentageOfWorld1(331);
 
-console.log(percPortugal1, percChina1, percUSA1);
+// Log the results to the console
+console.log(`China: ${chinaPercentage1.toFixed(2)}% of the world population`);
+console.log(`India: ${indiaPercentage.toFixed(2)}% of the world population`);
+console.log(`USA: ${usaPercentage.toFixed(2)}% of the world population`);
 
 
-// Arrow function
+//Recreate the last assignment, but this time create an arrow function called percentageOfWorld3.
 
 const percentageOfWorld3 = population => (population / 7900) * 100;
-const percPortugal3 = percentageOfWorld3(10);
 
-const percPortugal1 = percentageOfWorld3(10);
-const percChina1 = percentageOfWorld3(1441);
-const percUSA1 = percentageOfWorld3(332);
-console.log(percPortugal1, percChina1, percUSA1);
-*/
+const persChina3 = percentageOfWorld3(1441);
+const persIndia3 = percentageOfWorld3(1390);
+const persUsa3 = percentageOfWorld3(331);
+
+
+console.log(persChina3, persIndia3, persUsa3)
+
+
+// Function Declaration for percentageOfWorld1
 function percentageOfWorld1(population) {
-  const worldPopulation = 7900; // in millions
-  return (population / worldPopulation) * 100;
+  return (population / 7900) * 100;
 }
-const describePopulation = function describePopulation(country, population) {
-    const percentage = percentageOfWorld1(population);
-    const description = `${country}has ${population} million people, which is about ${percentage}% of the world.`;
-    console.log(description);
+// Function Declaration for describePopulation
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage.toFixed(1)}% of the world.`;
 }
-describePopulation('Portugal', 10);
-describePopulation('China', 1441);
-describePopulation('USA', 332);
+//Call describePopulation with data for 3 countries
+const chinaDescription = describePopulation('China', 1441);
+const indiaDescription = describePopulation('India', 1390);
+const usaDescription = describePopulation('USA', 331);
+// Log the results to the console
+console.log(chinaDescription);
+console.log(indiaDescription);
+console.log(usaDescription);
+ */
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+  if (retirement > 0) {
+    console.log(`${firstName} retires in $ {retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired🥥`);
+    return -1;
+  }
+}
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1950, 'mike'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
