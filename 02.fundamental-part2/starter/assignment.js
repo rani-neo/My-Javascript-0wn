@@ -72,7 +72,35 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'mike'));
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+const populations = [10, 1441, 332, 83];
+console.log(populations.length === 4);
+const percentage = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+// Log the percentages array
+console.log(percentage);
 */
+// Step 1: Create an array of neighbouring countries
+const neighbours = ['France', 'Belgium', 'Netherlands'];
+// Step 2: Add 'Utopia' to the end of the array
+neighbours.push('Utopia');
+console.log(neighbours)
+// Step 3: Remove 'Utopia' from the end of the array
+neighbours.pop('Utopia');
+console.log(neighbours);
+// Step 4: Check if 'Germany' is in the neighbours array
+if (neighbours.includes('germany')) {
+   console.log('Probably not a central European country :D');
+}
+// Step 5: Change the name of one of the neighbouring countries
+// Let's change 'Netherlands' to 'Kingdom of the Netherlands' neighbours.indexOf('Netherlands');
+neighbours[neighbours.indexOf('Sweden')] = 'Republic of Sweden';
+console.log(neighbours);
+
+
+
 
 
 

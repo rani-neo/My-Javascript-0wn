@@ -77,7 +77,7 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 console.log(fruitProcessor(2, 3));
-*/
+
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
 
@@ -103,3 +103,70 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
+
+ //Arrays
+const friend1 = 'Ishika';
+const friend2 = 'Ishaan'; 
+const friend3 = 'Chandra';
+
+const friends = ['Ishika', 'Ishaan', 'Chandra'];
+console.log(friends);
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'
+console.log(friends);
+
+const firstName = 'Rashmi';
+const Rashmi = [firstName, 'Rani', 2037 - 1980, 'devOps', friends];
+console.log(Rashmi);
+console.log(Rashmi.length)
+//excersice
+const calcAge = function (birthyear) {
+    return 2037 - birthyear
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]),
+    calcAge(years[years.length - 1])];
+console.log(ages);
+
+const friends = ['Ishika', 'Ishaan', 'Chandra'];
+// Add elements
+const newlength = friends.push('Jay');
+console.log(friends);
+console.log(newlength);
+
+friends.unshift('Rashmi');
+console.log(friends);
+ 
+//Remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);// Last
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Ishaan'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Ishaan'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Ishaan')) {
+    console.log('You have a friend called Ishaan');
+}
+*/
+
