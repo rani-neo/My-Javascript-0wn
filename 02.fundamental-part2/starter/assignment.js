@@ -55,7 +55,7 @@ const usaDescription = describePopulation('USA', 331);
 console.log(chinaDescription);
 console.log(indiaDescription);
 console.log(usaDescription);
- */
+ 
 const calcAge = function (birthYear) {
   return 2037 - birthYear;
 }
@@ -72,7 +72,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'mike'));
-
+*/
 
 
 
