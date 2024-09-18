@@ -168,7 +168,7 @@ console.log(friends.includes(23));
 if (friends.includes('Ishaan')) {
     console.log('You have a friend called Ishaan');
 }
-*/
+
 // Coding Challenge #2
 // Step 1: Function to calculate the tip based on the bill value
 const calcTip = function (bill) {
@@ -188,11 +188,12 @@ const Rashmi = {
     lastName: 'Rani',
     age: 2037 - 1980,
     job: 'devops',
-    friends: ['Ishika', 'Ishaan', 'Chandra']
-};
+    friends: ['Ishika', 'Ishaan', 'Chandra'],
+  
+}
 console.log(Rashmi);
 //Dot notation
-console.log(Rashmi.lastname);
+console.log(Rashmi.lastName);
 //Brackect notation
 console.log(Rashmi['lastname']);
 
@@ -200,3 +201,59 @@ const namekey = 'Name';
 console.log(Rashmi['first' + namekey]);
 console.log(Rashmi['last' + namekey]);
 
+const interestedIn = prompt('what do you want to know about  rashmi? Choose between firstname, lastName, age, job, and friends');
+
+if (Rashmi[interestedIn]) {
+    console.log(Rashmi[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName,lastName, age, job, and friends');
+}
+Rashmi.location = 'Australia';
+Rashmi['twitter'] = '@RashmiRO5298976';
+console.log(Rashmi);
+
+// Challange
+// "Rashmi has 3 friends, and her best friend is called Ishika"
+console.log(`${Rashmi.firstName} has ${Rashmi.friends.length}friends, and his best friend is called ${Rashmi.friends[0]}`);
+
+//object method
+
+const Rashmi = {
+    firstName: 'Rashmi',
+    lastName: 'Rani',
+    birthyear: 1980,
+    job: 'devops',
+    friends: ['Ishika', 'Ishaan', 'Chandra'],
+    hasDriverlicence: true,
+
+    //calcAge: function (birthyear) {
+        //return 2037 - birthyear;
+    //}
+
+    //calcAge: function () {
+   //console.log(this)
+    //return 2037 - this.birthyear;
+     //}
+   
+     calcAge: function () {
+        this.age = 2037 - this.birthyear;
+        return this.age;
+},
+getSummary: function () {
+         return `${this.firstName} is a ${this.calcAge()} -year old ${Rashmi.job}, and she has ${this.hasDriverLicence ? 'a' : 'no'} drivers'licence.`
+     }
+  
+};
+
+console.log(Rashmi.calcAge());
+
+
+console.log(Rashmi.age);
+console.log(Rashmi.age);
+console.log(Rashmi.age);
+
+//challenge
+//"Rashmi is a 57 year old devops, and she has a driver licence"
+console.log(Rashmi.getSummary());
+
+*/
