@@ -256,4 +256,97 @@ console.log(Rashmi.age);
 //"Rashmi is a 57 year old devops, and she has a driver licence"
 console.log(Rashmi.getSummary());
 
+
+// Iteration For loop keeps running while condition is true
+
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weight repetition ${rep} 🏆`);
+}
+ 
+const rashmi = [
+    'Rashmi',
+    'Rani',
+    2037 - 1980,
+    'devops',
+    ['Ishika', 'Ishaan', 'Chandra'],
+    true
+];
+const types = [];
+// console.log(jonas[0])  
+// console.log(jonas[1])
+// ...
+// console.log(jonas[4])
+// jonas[5] doesnot exit
+
+for (let i = 0; i < rashmi.length; i++) {
+    // Reading from jonas array
+    console.log(rashmi[i], typeof rashmi[i]);
+    // filling types array
+   // types[i] = typeof rashmi[i];
+    types.push(typeof rashmi[i]);
+}
+console.log(types);
+
+const years = [1991, 1984, 2008, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---Only String---')
+for (let i = 0; i < rashmi.length; i++) {
+    if (typeof rashmi[i] !== 'string') continue;
+    console.log(rashmi[i], typeof rashmi[i]);  
+}
+
+console.log('---BREAKING WITH NUMBERS---')
+for (let i = 0; i < rashmi.length; i++) {
+    if (typeof rashmi[i] === 'number') break;
+    console.log(rashmi[i], typeof rashmi[i]);  
+}
+
+const rashmi = [
+    'Rashmi',
+    'Rani',
+    2037 - 1980,
+    'devops',
+    ['Ishika', 'Ishaan', 'Chandra'],
+    true
+
+];
+// 0,1, ..., 4
+// 4,3, .., 0
+for (let i = rashmi.length - 1; i >= 0; i--) {
+    console.log(i, rashmi[i]);
+}
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`---- Starting excercise ${exercise}`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏆`);
+    }
+}
+
+//for (let rep = 1; rep <= 10; rep++) {
+    //console.log(`Lifting weight repetition ${rep}🏆`);
+//}
+
+let rep = 1;
+while (rep <= 10) {
+   // console.log(`WHILE: Lifting weights repetition ${rep} //🏆 `);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end..');
+}
 */
+
+
+
+    
